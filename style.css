@@ -184,9 +184,26 @@ border-radius:50%;
 animation:explode 1s forwards;
 }
 
-@keyframes explode{
-to{
-transform:translate(var(--x),var(--y));
-opacity:0;
+@keyframes fly{
+0%{
+transform:translateY(0);
 }
+100%{
+transform:translateY(-120vh);
+}
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+
+.hbd{
+font-size:35px;
+letter-spacing:10px;
+}
+
+.gallery img{
+width:70px;
+}
+
 }
